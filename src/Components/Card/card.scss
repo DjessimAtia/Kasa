@@ -1,0 +1,46 @@
+/* Variables Sass */
+$grey: #F6F6F6;
+$gradient-black: rgba(0, 0, 0, 0.2);
+$white-background: #FFFFFF;
+
+.card {
+  position: relative;
+  border-radius: 25px;
+  background: $white-background; 
+  width: 28%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .card_container {
+    position: relative;
+    border-radius: 25px;
+    background: $grey; 
+    height: 340px;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 25%;
+      background: linear-gradient(transparent, $gradient-black); 
+    }
+
+    .card_text {
+      position: absolute;
+      bottom: 0;
+      color: $grey; 
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+}

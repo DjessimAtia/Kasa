@@ -1,0 +1,91 @@
+/* Variables Sass */
+$Gray: #F6F6F6;
+$PrimaryColor: #FF6060;
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.menu {
+  margin-bottom: 23px;
+  gap: 30px;
+  font-size: 22px;
+ 
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: 2%;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 85%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    ;
+    width: 98%;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+.menu_box {
+  background-color: $PrimaryColor;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+
+    height: 30px;
+
+    align-content: center;
+  }
+}
+
+.menu_animation {
+  border-radius: 10px 10px 5px 5px;
+  background: $Gray;
+  transition: all 0.3s ease;
+  margin: 0;
+  color: $PrimaryColor;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 98%;
+  margin-bottom: 25px;
+}
+
+.menu_visible {
+  opacity: 1;
+  max-height: 500px;
+  transition: opacity 0.5s ease, max-height 0.3s ease, 0.3s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    ;
+    width: 98%;
+  }
+}
+
+.menu_hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.3s ease, 0.3s ease-in-out;
+}
+.Apropos .menu_animation {
+  width: 83%;
+  @media screen and (max-width: 768px) {
+  
+
+    width: 95%;
+  }
+}

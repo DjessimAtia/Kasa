@@ -1,0 +1,14 @@
+/* Variables Sass */
+$mainColor: #FF6060;
+$defaultFillColor: #ddd;
+
+.rating-svg {
+  width: 20px;
+  height: 20px;
+  fill: $defaultFillColor; 
+  margin-right: 5px;
+}
+
+.rating-svg.filled {
+  fill: $mainColor; 
+}

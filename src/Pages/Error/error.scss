@@ -1,0 +1,57 @@
+/* Variables Sass */
+$error-color: #FF6060; 
+
+
+.error {
+  h1 {
+    color: $error-color;
+    text-align: center;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: $error-color;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  a.Link {
+    color: $error-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 1168px) {
+    h1 {
+      font-size: 150px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    a.Link {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    h1 {
+      font-size: 96px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    a.Link {
+      font-size: 14px;
+    }
+  }
+}

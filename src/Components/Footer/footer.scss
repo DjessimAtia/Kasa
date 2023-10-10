@@ -1,0 +1,41 @@
+/* Variables Sass */
+$backgroundColor: #000;
+$textColor: white;
+
+.footer {
+  background: $backgroundColor; 
+  color: $textColor; 
+  margin: 0px auto 0px auto;
+  height: 209px;
+  
+  a {
+    color: $textColor; 
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+
+}
+
+.footer_texte{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .footer p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}   
