@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../../sass/app.scss";
 import "../Header/header.scss";
-import logoSvg from "../../Logo/logoo.svg";
+import logo from "../../Logo/LOGO.JPG";
 
 // Composant Header qui affiche la barre de navigation
 function Header() {
@@ -26,15 +26,9 @@ function Header() {
   return (
     <header>
       <nav className="container header">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="211"
-          height="68"
-          viewBox="0 0 211 68"
-          fill="white"
-        >
-          <image xlinkHref={logoSvg} />
-        </svg>
+       
+          <img src={logo}></img>
+        
         <div className="header_link">
           {/* Liens de navigation */}
           <Link

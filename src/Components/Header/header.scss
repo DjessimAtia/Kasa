@@ -30,8 +30,8 @@ $mainColor: #FF6060;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 10px;
-    justify-content: center;
+   
+    justify-content: space-between;
     gap: 43px;
     margin: 5px;
     a.Link{
@@ -40,5 +40,11 @@ $mainColor: #FF6060;
     svg{
       height: 46.881px;
     }
+  }
+}
+.header img{
+  height: 68px;
+  @media screen and (max-width: 768px) {
+    height: 46px;
   }
 }

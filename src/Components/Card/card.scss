@@ -38,9 +38,10 @@ $white-background: #FFFFFF;
     .card_text {
       position: absolute;
       bottom: 0;
-      color: $grey; 
+      color: white; 
       padding: 10px;
       font-size: 18px;
+      z-index: 1;
     }
   }
 }
