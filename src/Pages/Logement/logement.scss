@@ -92,12 +92,8 @@ $error-color: #FF6060;
 
 .collapse .menu {
   width: 100%;
-  align-items: baseline;
-  @media screen and (max-width: 768px) {
-   align-items: center;
-   
-
-   }
+  align-items: center
+ 
 }
 
 .logement_texte {

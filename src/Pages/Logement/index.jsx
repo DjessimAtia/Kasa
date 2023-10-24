@@ -10,7 +10,7 @@ import Gallery from "../../Components/Gallery/index";
 function Logement() {
   const { logementId } = useParams();
   const [currentLogement, setCurrentLogement] = useState(null);
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Initialisé à 0
+  
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,8 +31,7 @@ function Logement() {
     <div className="container">
       <Gallery
         images={currentLogement["pictures"]}
-        currentPhotoIndex={currentPhotoIndex}
-        setCurrentPhotoIndex={setCurrentPhotoIndex} // Passer setCurrentPhotoIndex en tant que prop
+       // Passer setCurrentPhotoIndex en tant que prop
       />
       <div className="logement_container">
         <div className="texte">

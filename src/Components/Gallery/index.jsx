@@ -1,9 +1,12 @@
-import React from "react";
+
 import vectorLeft from "../../Logo/vectorLeft.svg";
 import vectorRight from "../../Logo/vectorRight.svg";
 import "./gallery.scss";
+import React, { useState,  } from "react";
+function Gallery({ images }) {
 
-function Gallery({ images, currentPhotoIndex, setCurrentPhotoIndex }) {
+
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Initialisé à 0
   const onLeftArrowClick = () => {
     const newIndex =
       currentPhotoIndex === 0 ? images.length - 1 : currentPhotoIndex - 1;

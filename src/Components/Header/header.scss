@@ -11,7 +11,7 @@ $mainColor: #FF6060;
   height: 150px;
     margin-bottom: 21px;
 
-  a.Link {
+  a {
     color: $mainColor; 
     text-decoration-line: none;
     text-align: right;
@@ -34,7 +34,7 @@ $mainColor: #FF6060;
     justify-content: space-between;
     gap: 43px;
     margin: 5px;
-    a.Link{
+    a{
       font-size: 12px;
     }
     svg{

@@ -2,7 +2,7 @@ import React from "react";
 import "../Banner/banner.scss";
 
 // BannerPages props imagePath, className et text
-const BannerPages = ({ imagePath, className, text }) => {
+const Banner = ({ imagePath,  text }) => {
   return (
     // Création d'un conteneur div pour la bannière avec des classes CSS
     <div className={`banner `}>
@@ -20,4 +20,4 @@ const BannerPages = ({ imagePath, className, text }) => {
   );
 };
 
-export default BannerPages;
+export default Banner;
